@@ -23,3 +23,13 @@ const tex = parser.parse("int_(i=1)^10 x^2/2 dx");
 There are some unit tests in `test.html`, copied from [the asciimath repository](https://github.com/asciimath/asciimathml/blob/master/test/unittests.js). 
 
 All of the tests are rendered correctly by KaTeX, apart from `\twoheadrightarrowtail`, which it apparently doesn't support.
+
+# browserify
+
+```
+npm install --save-dev babelify @babel/core @babel/preset-env
+```
+
+```
+ browserify src/index.js --standalone mymodule -o dist/asciimath2tex.js -t [ babelify --presets [ @babel/preset-env ] ]
+```

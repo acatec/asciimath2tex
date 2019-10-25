@@ -1,4 +1,4 @@
-import AsciiMathParser from './asciimath2tex.js';
+import AsciiMathParser from './src/asciimath2tex.js';
 window.AsciiMathParser = AsciiMathParser;
 
 class FXParser extends AsciiMathParser {
